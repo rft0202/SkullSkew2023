@@ -32,8 +32,13 @@ public class FallingScript : MonoBehaviour
     {
         if(collision.gameObject.tag == "Reset")
         {
-            transform.position = startPos;
-            rb.velocity = Vector3.zero; //changes the float values to zero
+            ResetPos();
         }
+    }
+
+    public void ResetPos()
+    {
+        transform.position = startPos;
+        rb.velocity = Vector3.zero; //changes the float values to zero
     }
 }
