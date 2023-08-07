@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Reset
+  - blue
+  - green
+  - red
+  - yellow
   layers:
   - Default
   - TransparentFX

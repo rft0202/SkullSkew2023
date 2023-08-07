@@ -12,17 +12,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue Skull Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 1ef10ba7029105c42a37f8f23ec32b6a, type: 3}
+      propertyPath: m_TagString
+      value: blue
+      objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: 1ef10ba7029105c42a37f8f23ec32b6a, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: 1ef10ba7029105c42a37f8f23ec32b6a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.64
+      value: -3.08
       objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: 1ef10ba7029105c42a37f8f23ec32b6a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.67
+      value: 2.81
       objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: 1ef10ba7029105c42a37f8f23ec32b6a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -70,6 +74,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100016, guid: 1ef10ba7029105c42a37f8f23ec32b6a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8534906814196973394}
+    - targetCorrespondingSourceObject: {fileID: 100016, guid: 1ef10ba7029105c42a37f8f23ec32b6a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8137421927653671295}
   m_SourcePrefab: {fileID: 100100000, guid: 1ef10ba7029105c42a37f8f23ec32b6a, type: 3}
 --- !u!1 &7049770086898286122 stripped
 GameObject:
@@ -124,3 +131,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8137421927653671295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7049770086898286122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c58ed88467fa7444d8315ed680259dbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  startPos: {x: 0, y: 0, z: 0}

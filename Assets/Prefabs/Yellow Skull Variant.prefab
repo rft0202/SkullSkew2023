@@ -12,9 +12,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Yellow Skull Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 09e9cfcb0e5c0244d9d9b189b2977d42, type: 3}
+      propertyPath: m_TagString
+      value: yellow
+      objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: 09e9cfcb0e5c0244d9d9b189b2977d42, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: 09e9cfcb0e5c0244d9d9b189b2977d42, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: 09e9cfcb0e5c0244d9d9b189b2977d42, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.55
+      value: 2.81
       objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: 09e9cfcb0e5c0244d9d9b189b2977d42, type: 3}
       propertyPath: m_LocalPosition.z
@@ -70,6 +74,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100016, guid: 09e9cfcb0e5c0244d9d9b189b2977d42, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3455399989165231177}
+    - targetCorrespondingSourceObject: {fileID: 100016, guid: 09e9cfcb0e5c0244d9d9b189b2977d42, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1956878907708023685}
   m_SourcePrefab: {fileID: 100100000, guid: 09e9cfcb0e5c0244d9d9b189b2977d42, type: 3}
 --- !u!1 &5635686045999182934 stripped
 GameObject:
@@ -124,3 +131,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1956878907708023685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5635686045999182934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c58ed88467fa7444d8315ed680259dbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  startPos: {x: 0, y: 0, z: 0}

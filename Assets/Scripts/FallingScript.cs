@@ -5,14 +5,15 @@ using UnityEngine;
 public class FallingScript : MonoBehaviour
 {
     //Variables go here
-
+    public int score;
     public Vector3 startPos;
     Rigidbody rb;
-
+    public GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
     {
+        score = 0;
         startPos = transform.position;
         rb = GetComponent<Rigidbody>();
     }
@@ -32,13 +33,8 @@ public class FallingScript : MonoBehaviour
     {
         if(collision.gameObject.tag == "Reset")
         {
-            ResetPos();
+            gameManager.ResetPos(startPos, this.gameObject);
         }
     }
 
-    public void ResetPos()
-    {
-        transform.position = startPos;
-        rb.velocity = Vector3.zero; //changes the float values to zero
-    }
 }
