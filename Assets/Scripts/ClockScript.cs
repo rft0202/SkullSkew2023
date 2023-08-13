@@ -10,6 +10,8 @@ public class ClockScript : MonoBehaviour
     int minutes;
     int seconds;
     public TMP_Text timer;
+    public GameObject[] skulls;
+    public GameManager gm;
 
     // Start is called before the first frame update
     void Start()
@@ -52,5 +54,13 @@ public class ClockScript : MonoBehaviour
     private void TimeIsUp()
     {
         Debug.Log("Time is up!");
+        for(int i = 0; i < skulls.Length; i++)
+        {
+            //Set the end score data
+            PlayerPrefs.SetInt(skulls[i].gameObject.tag, skulls[i].GetComponent<FallingScript>().score);
+        }
+
+        //Go to Game Over Menu
+        gm.GameOver();
     }
 }

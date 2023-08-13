@@ -9,6 +9,7 @@ public class FallingScript : MonoBehaviour
     public Vector3 startPos;
     Rigidbody rb;
     public GameManager gameManager;
+    public GameObject splashParticle;
 
     // Start is called before the first frame update
     void Start()
@@ -29,10 +30,11 @@ public class FallingScript : MonoBehaviour
         */
     }
 
-    private void OnTriggerExit(Collider collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if(collision.gameObject.tag == "Reset")
         {
+            Instantiate(splashParticle, transform.position, Quaternion.Euler(-90,0,0));
             gameManager.ResetPos(startPos, this.gameObject);
         }
     }

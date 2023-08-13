@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -37,5 +38,10 @@ public class GameManager : MonoBehaviour
     public void AddScore(int color, int score)
     {
         scoreText[color].text = score.ToString();
+    }
+
+    public void GameOver()
+    {
+        SceneManager.LoadScene(2);
     }
 }

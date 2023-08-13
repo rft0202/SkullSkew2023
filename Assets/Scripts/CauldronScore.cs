@@ -8,6 +8,7 @@ public class CauldronScore : MonoBehaviour
     public GameManager gameManager;
     public GameObject[] skullScores;
     public string chosenSkull;
+    public AudioClip[] soundFX;
    
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,7 @@ public class CauldronScore : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         chosenSkull = gameManager.chosenSkullName;
+        GetComponent<AudioSource>().PlayOneShot(soundFX[Random.Range(0, soundFX.Length)]);
         SortSkullScore(other.gameObject.tag);
     }
 
